@@ -1,9 +1,10 @@
 # NusArt - Machine Learning Repository
 
-Overview
+# Overview
 This repository serves as a sub-repository of https://github.com/Hanzein/NusArt, containing all machine learning aspects dedicated to the project. It focuses on the multiclass classification of paintings into three primary categories: era, genre, and style. The project utilizes TensorFlow to construct and train three distinct models for each classification task.
 
-Models
+# Models
+
 1. Era Classification Model
 The era classification model is designed to predict the time period to which a painting belongs. It has 12 different classes
 
