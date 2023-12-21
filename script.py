@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
 import numpy as np
+import os
 
 app = Flask(__name__)
 
@@ -121,6 +122,8 @@ def predict():
         
         
         data["success"] = True
+
+        os.remove(image_path)
 
     return jsonify(data)
 
