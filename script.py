@@ -8,7 +8,6 @@ app = Flask(__name__)
 
 # Load Model h5 (path ke model)
 genre_model = load_model('genre_model.h5')
-genre_model._make_predict_function()
 genre_labels = { # labels
     0: 'abstract',
     1: 'design',
@@ -23,7 +22,6 @@ genre_labels = { # labels
 }
 
 style_model = load_model('style_model.h5')
-style_model._make_predict_function()
 style_labels = {
     0: 'Rococo',
     1: 'HighRenaissance',
@@ -55,7 +53,6 @@ style_labels = {
 }
 
 era_model = load_model('era_model.h5')
-era_model._make_predict_function()
 era_labels = {
     0: 'baroque', 
     1: 'contemporary', 
